@@ -1,0 +1,16 @@
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-item-spacing{
+    max-width: 28em;
+    padding: 0.5em;
+}
+
+@mixin grayscale-out{
+    filter: grayscale(0%);
+    transition: all 200ms linear 0s;
+}

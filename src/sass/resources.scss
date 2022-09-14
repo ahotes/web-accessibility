@@ -1,0 +1,137 @@
+@import './colors.scss';
+@import './typography.scss';
+@import './mixins.scss';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.info-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    min-height: 40vh;
+    margin: 2em;
+    margin-bottom: 5em;
+    padding: 2em;
+
+    .w3c-svg{
+        width: 9em;
+        height: 5em;
+
+        svg{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.info-section > *{
+    margin: 2em;
+}
+
+.technology-section{
+    margin-top: 8em;
+
+    h2{
+        margin: 0;
+        text-align: center;
+    }
+
+    .img-list{
+        padding: 2em;
+        @include flex-center;
+        flex-flow: row wrap;
+        flex: 1 1 auto;
+        min-height: 20vh;
+
+        .bootstrap-svg{
+            filter: grayscale(100%);
+            align-self: center;
+            width: 5.625em;
+            height: 5.625em;
+
+            svg{
+                fill: rgb(113, 44, 249);
+            }
+        }
+        .bootstrap-svg:hover{
+            @include grayscale-out;
+            .icon-label{
+                display: block;
+            }
+        }
+        .sass-svg{
+            filter: grayscale(100%);
+            width: 5.625em;
+            height: 5.625em;
+
+            svg{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .sass-svg:hover{
+            @include grayscale-out;
+            .icon-label{
+                display: block;
+            }
+        }
+
+        .responsive-svg{
+            filter: grayscale(100%);
+            align-self: center;
+            width: 5.625em;
+            height: 5.625em;
+
+            svg{
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+        .responsive-svg:hover{
+            @include grayscale-out;
+            .icon-label{
+                display: block;
+            }
+        }
+        }
+    }
+
+
+.icon-label{
+    margin-top: 0.5em;
+    display: none;
+    text-align: center;
+    padding: 0;
+}
+
+.img-list > *{
+    margin: 0 2em;
+}
+
+@media screen and (max-width: 300px){
+    .info-section{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .img-list > *{
+        margin-bottom: 1.5em;
+    }
+    .icon-label{
+        display: none !important;
+    }
+}
