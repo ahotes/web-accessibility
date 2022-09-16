@@ -1,0 +1,214 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+header {
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: row wrap;
+  background-color: rgb(28, 28, 28);
+  align-items: center;
+  min-height: 95vh;
+}
+header .header__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 100px;
+  flex-flow: row wrap;
+  color: #fff;
+}
+header .header__flex h1 {
+  font-size: clamp(2.2em, 4vw, 4em);
+  margin: 1em;
+  padding: 1em;
+  font-family: "Segoe ui", sans-serif;
+}
+header .header__flex blockquote {
+  max-width: 25em;
+  padding: 1em;
+}
+header .header__flex blockquote p {
+  text-align: left;
+}
+header .header__flex blockquote cite {
+  text-align: right;
+  float: right;
+}
+header .header__flex a {
+  text-decoration: none;
+  word-break: keep-all;
+}
+header .header__flex a:hover {
+  text-decoration: underline;
+}
+
+main .section-1 {
+  background-color: #ff9d00;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23f27d00' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23e55f00' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23d84400' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23cb2c00' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23bf1600' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23b20300' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23a5000e' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%2398001c' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%238b0027' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%237e0030' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23710037' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%2364003b' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%2358003c' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234b003a' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0037' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23310030' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  padding: calc(8px + 1.5625vw);
+  min-height: 35vh;
+}
+main .section-1 h1 {
+  text-align: center;
+  margin-right: 30vw;
+  padding: 1.5rem;
+  font-family: "Segoe ui", sans-serif;
+}
+main .section-1 p {
+  font-size: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 30vw;
+  max-width: 40em;
+  font-family: "Lato", sans-serif;
+}
+main .section-1 a {
+  color: orange !important;
+  font-weight: 700 !important;
+}
+main .section-1 a:hover {
+  color: yellow !important;
+}
+main .section-2 {
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: column nowrap;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+main .section-2 .flex-item1 {
+  padding: calc(8px + 1.5625vw);
+  align-self: flex-start;
+}
+main .section-2 .flex-item1 h1 {
+  margin-top: clamp(2em, 5vw, 4vh);
+  color: rgb(252, 120, 11);
+  font-family: "Segoe ui", sans-serif;
+}
+main .section-2 .flex-item1 p {
+  max-width: 28em;
+  padding: 0.5em;
+  font-family: "Lato", sans-serif;
+}
+main .section-2 .flex-item2 {
+  align-self: flex-end;
+  padding: calc(8px + 1.5625vw);
+  margin-right: 4%;
+  padding: 1em;
+}
+main .section-2 .flex-item2 h1 {
+  color: rgb(15, 205, 15);
+  font-family: "Segoe ui", sans-serif;
+}
+main .section-2 .flex-item2 p {
+  max-width: 28em;
+  padding: 0.5em;
+  font-family: "Lato", sans-serif;
+}
+main .section-2 .flex-item3 {
+  padding: calc(8px + 1.5625vw);
+}
+main .section-2 .flex-item3 h1 {
+  color: royalblue;
+  font-family: "Segoe ui", sans-serif;
+}
+main .section-2 .flex-item3 p {
+  max-width: 28em;
+  padding: 0.5em;
+  font-family: "Lato", sans-serif;
+}
+
+.section-2 > * {
+  margin-bottom: 20em;
+}
+
+.section-3 {
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: row wrap;
+  min-height: 40vh;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin-top: 3em;
+}
+.section-3 h1 {
+  margin-bottom: 0.4em;
+  font-family: "Segoe ui", sans-serif;
+}
+.section-3 p {
+  max-width: 30em;
+}
+.section-3 div {
+  padding: 2%;
+}
+.section-3 img {
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  margin-bottom: 2em;
+}
+
+.carousel-section .carousel-img {
+  max-height: 66vh;
+  object-fit: fill;
+}
+
+footer {
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.4rem;
+}
+
+@media screen and (max-width: 300px) {
+  header .header__flex h1 {
+    margin: 0;
+    padding: 0;
+  }
+  header blockquote {
+    font-size: 1rem;
+  }
+  .section-1 p {
+    padding: 0.5rem;
+  }
+  .section-2 {
+    justify-content: left;
+    align-items: center;
+  }
+  .section-2 .flex-item2 {
+    align-items: center;
+  }
+  .section-3 {
+    margin-top: 2em;
+  }
+  .section-3 img {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .section-3 h1 {
+    margin: 0.5em;
+    padding: 0;
+  }
+  .section-3 p {
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+}
